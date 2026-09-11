@@ -48,7 +48,7 @@ PG_RESET_TEMPLATE(autopilotConfig_t, autopilotConfig,
     .positionCutoff = 30,
     .stopThreshold = 10,
     .maxAngle = 50,
-
+    .cruiseAngle = 15,
     // Velocity-based position control with drag compensation
     .velocityDragCoeff = 50,          // 5 deg at 5 m/s, half the nominal maximum
     .maxVelocity = 500,               // 5 m/s max velocity setpoint at full stick
