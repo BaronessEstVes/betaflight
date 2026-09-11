@@ -68,7 +68,7 @@ typedef struct autopilotConfig_s {
     uint8_t positionCutoff;
     uint8_t stopThreshold;       // percent of the speed carried into braking, floored at 1 cm/s: braking captures the position hold target once the speed falls below it
     uint8_t maxAngle;
-
+    uint8_t cruiseAngle;
     // Drag feedforward and velocity setpoint cap (maxVelocity also sets the full-stick velocity target in position hold)
     uint8_t velocityDragCoeff;        // linear drag feedforward, 0-100: degrees = coeff * 0.0002 * velocity cm/s (default 50 = 5 deg at 5 m/s)
     uint16_t maxVelocity;             // cm/s, maximum velocity setpoint (default 500 = 5 m/s)
